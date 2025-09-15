@@ -1,123 +1,159 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Hobi Sharliz</title>
   <style>
     body {
-      font-family: Times New Roman, sans-serif;
+      font-family: "Times New Roman", sans-serif;
       background-image: url('aot.jpg');
-             background-size: cover;
-             background-repeat: no-repeat;
-             background-attachment: fixed;">
-
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: center;
       margin: 0;
-      padding: 20px;
+      color: white;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    h1, h2, h3, p {
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .content {
       max-width: 800px;
       margin: auto;
+      padding: 20px;
     }
-    h1 {
-      text-align: center;
-      font-weight: normal;
-      color: #333;
-    }
-    .hobi {
-      margin-top: 30px;
-    }
-    .hobi h2 {
-      font-weight: normal;
-      color: #444;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    .hobi-container {
-      display: flex;
-      flex-wrap: wrap;
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 20px;
-      justify-content: center;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .hobi-item {
-      width: 220px;
-      background: #fafafa;
+
+    figure {
+      margin: 0;
+      background: white;
+      padding: 10px;
       border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: transform 0.3s;
     }
-    .hobi-item:hover {
+
+    figure:hover {
       transform: scale(1.05);
     }
-    .hobi-item img {
+
+    figure img {
       width: 100%;
-      height: 140px;
+      height: 150px;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 10px;
     }
-    .hobi-item p {
+
+    figcaption {
+      margin-top: 8px;
       font-size: 14px;
-      color: #555;
+      color: #333;
+    }
+
+    /* Tombol menu */
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #6495ED;
+      color: white;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Biodata Saya</h1>
-
-    <!-- Bagian Hobi -->
-    <div class="hobi">
-      <h2>Hobi Saya</h2>
-      <div class="hobi-container">
-        
-        <div class="hobi-item">
-          <img src="menonton anime.jpg" alt="Menonton Anime">
-          <h3>Menonton Anime</h3>
-          <p>Saya suka menonton anime dari beberapa genre seperti romance, slice of life, action.</p>
-        </div>
-
-        <div class="hobi-item">
-          <img src="emel.jpg" alt="emel">
-          <h3>Bermain Game</h3>
-          <p>Saya suka bermain game seperti Mobile Legends, Roblox, dan lain-lain.</p>
-        </div>
-
-  
-      </div>
-    </div>
+ <h1><br> Hobi Sharliz</h2>
+  <a><center><div class="gallery">
+    <figure>
+      <img src="menonton anime.jpg" alt="Menonton Anime">
+      <figcaption>Menonton Anime</figcaption>
+    </figure>
+    <figure>
+      <img src="lego.jpg" alt="Merakit Lego">
+      <figcaption>Merakit lego</figcaption>
+    </figure>
+ <figure>
+      <img src="tidur.jpg" alt="Tidur">
+      <figcaption>Tidur</figcaption>
+   </figure>
+ <figure>
+      <img src="novel.jpg" alt="novel">
+      <figcaption>Membaca Novel</figcaption>
+    </figure>
   </div>
 
-<style>
-  .menu {
-    background-color: rgba(0,0,0,0.6);
-    padding: 8px 15px;
-    display: inline-block; 
-    border-radius: 8px;    
-  }
-  .menu a {
-    color: white;             
-    text-decoration: none;    
-    margin: 0 8px;
-  }
-  .menu a:hover {
-    color: lightblue;            
-  }
-</style>
+    <h2>Bermain Game</h2>
+    <p>
+      Saya sering kali mengisi waktu luang dengan bermain game, karena menurut saya seru apalagi bermain bersama teman.
+    </p>
+  </div>
 
-<center>
-  <h2 class="menu">
-    <a href="index.html">Home  |</a>
-    <a href="halaman2.html">Biodata  |</a>
-    <a href="galeri.html">Galeri  |</a>
-  </h5>
-</center>
+  <!-- Galeri game -->
+  <div class="gallery">
+    <figure>
+      <img src="emel.jpg" alt="Mobile Legends">
+      <figcaption>Mobile Legends</figcaption>
+    </figure>
+    <figure>
+      <img src="minecraft.png" alt="Minecraft">
+      <figcaption>Minecraft</figcaption>
+</figure>
+ <figure>
+      <img src="roblox2.jpg" alt="Roblox">
+      <figcaption>Roblox</figcaption>
+    </figure>
+ <figure>
+      <img src="ff.jpg" alt="Free Fire">
+      <figcaption>Free Fire</figcaption>
+    </figure>
+ <figure>
+      <img src="amongus.jpg" alt="Among Us">
+      <figcaption>Among Us</figcaption>
+    </figure>
+ <figure>
+      <img src="mcgg.jpg" alt="mcgg">
+      <figcaption>Magic Chess GO GO</figcaption>
+    </figure>
+ <figure>
+      <img src="Citampi.jpg" alt="Citampi">
+      <figcaption>Citampi Stories</figcaption>
+    </figure>
+ <figure>
+      <img src="Sudoku.jpg" alt="Sudoku">
+      <figcaption>Sudoku</figcaption>
+    </figure>
 
+  </div>
+
+  <!-- Tombol menu -->
+  <div class="btn-container">
+    <button class="btn" onclick="location.href='tes2.html'">Home</button>
+    <button class="btn" onclick="location.href='halaman2.html'">Biodata</button>
+    <button class="btn" onclick="location.href='galeri.html'">Galeri</button>
+  </div>
 </body>
 </html>
-

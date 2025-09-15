@@ -1,50 +1,149 @@
-<html>
-<title> Sharliz's Page 2</title>
-<body style="background-image: url('aot.jpg');
-             background-size: cover;
-             background-repeat: no-repeat;
-             background-attachment: fixed;">
-</body>
-<marquee><font color=white><h2>
-Biodata Sharliz
-</h2></body>
-</marquee>
-<body><h1>
-<font color=white><CENTER>
-<p> Biodata
-<br></p>
-<img src="muka.jpg" alt="image" height="240" width="180">
-<h6 style="text-shadow: 2px 2px 5px black;">Nama: Sharliz Falisha Pribadi</h1>
-<h6 style="text-shadow: 2px 2px 5px black;">Kelas: XII A2 2</h1>
-<h6 style="text-shadow: 2px 2px 5px black;">Tanggal lahir: Jakarta, 7 Desember 2008</h1>
-<h6 style="text-shadow: 2px 2px 5px black;">Alamat: Bekasi Jaya Indah</h1>
-<h6 style="text-shadow: 2px 2px 5px black;">Jenis Kelamin: Perempuan</h1>
-<h6 style="text-shadow: 2px 2px 5px black;">Instagram: not.shar_</h1>
-<h6 style="text-shadow: 2px 2px 5px black;">ID Line: shrlyvs</h1>
-<style>
-  .menu {
-    background-color: rgba(0,0,0,0.6);
-    padding: 8px 15px;
-    display: inline-block; 
-    border-radius: 8px;    
-  }
-  .menu a {
-    color: white;             
-    text-decoration: none;    
-    margin: 0 8px;
-  }
-  .menu a:hover {
-    color: lightblue;            
-  }
-</style>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biodata Sharliz</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: url("aot.jpg") no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
 
-<center>
-  <h5 class="menu">
-    <a href="index.html">Home  |</a>
-    <a href="hobi.html">Hobi  |</a>
-    <a href="galeri.html">Galeri  |</a>
-  </h5>
-</center>
-</body>
+    .card {
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      width: 350px;
+      animation: fadeInUp 1s ease-in-out;
+      text-align: center;
+    }
 
+    .card img {
+      display: block;
+      margin: 0 auto 15px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .card h1 {
+      margin-bottom: 20px;
+    }
+
+    .card table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .card td {
+      padding: 8px 0;
+      vertical-align: top;
+    }
+
+    .card td:first-child {
+      font-weight: bold;
+      width: 40%;
+      text-align: left;
+    }
+
+    .card td:last-child {
+      text-align: left;
+    }
+
+    .card a {
+      color: #ffd700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      color: #ff69b4;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: ;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="muka.jpg" alt="Foto Sharliz">
+    <h1>Sharliz Falisha Pribadi</h1>
+    <table>
+      <tr>
+        <td>Kelas</td>
+        <td>XII A2 2</td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir</td>
+        <td>Jakarta, 7 Desember 2008</td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td>Bekasi Jaya Indah</td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>Perempuan</td>
+      </tr>
+      <tr>
+        <td>Instagram</td>
+        <td><a href="https://instagram.com/not.shar_" target="_blank">@not.shar_</a></td>
+      </tr>
+      <tr>
+        <td>ID Line</td>
+        <td>shrlyvs</td>
+      </tr>
+    </table>
+
+    <div class="btn-container">
+      <button class="btn" onclick="location.href='tes2.html'">Home</button>
+      <button class="btn" onclick="location.href='hobi.html'">Hobi</button>
+      <button class="btn" onclick="location.href='galeri.html'">Galeri</button>
+    </div>
+  </div>
+
+</body>
 </html>
